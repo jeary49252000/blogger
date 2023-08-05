@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkchun_hao_lai=self.webpackChunkchun_hao_lai||[]).push([[678],{6558:function(e,t,n){n.r(t),n.d(t,{Head:function(){return a}});t.default=()=>React.createElement("main",null,React.createElement("h1",null,"The site is under construction...",React.createElement("br",null)));const a=()=>React.createElement("title",null,"Home Page")}}]);
+//# sourceMappingURL=component---src-pages-index-js-d9a1583298d8db5cf3e3.js.map
