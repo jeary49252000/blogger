@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkchun_hao_lai=self.webpackChunkchun_hao_lai||[]).push([[678],{6558:function(e,n,t){t.r(n),t.d(n,{Head:function(){return l}});var a=t(7294);const u=(0,t(6301).X)((()=>a.createElement("div",null)));n.default=u;const l=()=>a.createElement("title",null,"Chun-Hao Lai")}}]);
+//# sourceMappingURL=component---src-pages-index-js-d433c931836e5c33e676.js.map
