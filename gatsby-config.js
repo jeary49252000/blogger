@@ -1,6 +1,10 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+const theme = {
+}
+
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://wilaind.com',
@@ -9,6 +13,10 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
+    {
+      resolve: "gatsby-plugin-jss",
+      options: { theme },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

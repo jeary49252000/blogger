@@ -1,12 +1,12 @@
 import * as React from "react"
 import { graphql, StaticQuery } from "gatsby";
+import { createUseStyles } from "react-jss";
 import { withLayout } from "../components/layout.js";
 import { PostCard } from "../components/post-card.js";
-import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   blogPage: {
-    width: '40%',
+    margin: '0 auto',
   },
 });
 

@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 const shortcodes = { Link } // Provide common components here
 const useStyles = createUseStyles({
   blogContent: {
-    width: '80%',
+    margin: '0 auto',
     fontSize: '1rem',
   },
 });
