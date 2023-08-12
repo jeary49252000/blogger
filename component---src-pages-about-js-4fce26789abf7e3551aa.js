@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkchun_hao_lai=self.webpackChunkchun_hao_lai||[]).push([[682],{5465:function(a,e,n){n.r(e);var c=n(7294),i=n(609),t=n(6301);const u=(0,i.QM)({main:{margin:"4px"}}),s=(0,t.X)((()=>{const a=u();return c.createElement("div",{className:a.main},"Hi! I am Chun-Hao Lai. Welcome to my Page.")}));e.default=s}}]);
-//# sourceMappingURL=component---src-pages-about-js-4fce26789abf7e3551aa.js.map
