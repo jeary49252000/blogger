@@ -1,11 +1,54 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { createUseStyles } from "react-jss";
+import classNames from "classnames";
+import { navigate } from "gatsby";
 
-export const PostCard = ({ title, date, author, slug }) => (
-  <div className="post-card">
-    <h2>{title}</h2>
-    <p>{date}</p>
-    <p>{author}</p>
-    <Link to={`/blog/${slug}`}>Read more</Link>
+const useStyles = createUseStyles({
+  postCard: {
+    '&:hover': {
+      cursor: 'pointer',
+      '& .title': {
+        textDecoration: 'underline',
+      },
+    },
+    '& .title': {
+      fontSize: '2rem',
+      fontWeight: 'bold',
+      marginBottom: '1rem',
+    },
+    '& .excerpt': {
+      fontSize: '1rem',
+      lineHeight: '1.5rem',
+    },
+    '& .author-info': {
+      '& .separator': {
+        margin: '0 0.5rem',
+      },
+      '& .author': {
+        fontWeight: 'bold',
+      },
+      '& .separator:first-child': {
+        marginLeft: '0',
+      }
+    },
+  },
+});
+
+
+export const PostCard = ({ title, date, author, slug, excerpt }) => {
+
+  const classes = useStyles();
+  return (<div className={classNames("post-card", classes.postCard)} onClick={
+    () => { navigate(`/blog/${slug}`) }
+  }>
+    <p className="title">{title}</p>
+    <p className="excerpt">{excerpt}</p>
+    <div className="author-info">
+      <span className="separator">By</span>
+      <span className="author">{author}</span>
+      <span className="separator">|</span>
+      <span className="date">{date}</span>
+    </div>
   </div>
 )
+}

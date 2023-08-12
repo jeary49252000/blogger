@@ -4,29 +4,30 @@ import { Link } from "gatsby"
 
 const useStyles = createUseStyles({
   nav: {
+    width: '100%',
+    color: 'black',
     "& ul": {
       "listStyleType": "none",
       "margin": "0",
       "padding": "0",
       "overflow": "hidden",
-      "backgroundColor": "#333"
+      backgroundColor: 'white',
     },
     "& li": {
-      "float": "left"
+      "float": "right"
     },
     "& li a": {
       "display": "block",
-      "color": "white",
       "textAlign": "center",
+      color: 'black',
+      fontSize: '1.5rem',
       "padding": "14px 16px",
       "textDecoration": "none"
     },
     "& li a:hover": {
-      "backgroundColor": "#111"
+      "backgroundColor": "lightgrey"
     },
-    '& a[aria-current]': {
-      "backgroundColor": '#04AA6D',
-    },
+    borderBottom: '1px solid black',
   },
 });
 
@@ -36,7 +37,6 @@ export const Nav = () => {
     <div className={classes.nav}>
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
         <li><Link to="/blog">Blog</Link></li>
       </ul>
     </div>);
