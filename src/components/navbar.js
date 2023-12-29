@@ -30,13 +30,13 @@ const useStyles = createUseStyles({
     borderBottom: '1px solid black',
   },
 });
-
 export const Nav = () => {
   const classes = useStyles();
   return (
     <div className={classes.nav}>
       <ul>
         <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
         <li><Link to="/blog">Blog</Link></li>
       </ul>
     </div>);

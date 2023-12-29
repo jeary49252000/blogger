@@ -5,12 +5,28 @@ import { createUseStyles } from "react-jss"
 import classNames from "classnames"
 import { withLayout } from "../components/layout"
 import { Link } from "gatsby"
+import { preToCodeBlock } from './pre-to-code'
+import Code from './code'
 
-const shortcodes = { Link } // Provide common components here
+const shortcodes = {
+  Link,
+  pre: preProps => {
+    const props = preToCodeBlock(preProps)
+    if (props) { return <Code {...props} /> }
+    return <pre {...preProps} />
+  },
+} // Provide common components here
+
 const useStyles = createUseStyles({
   blogContent: {
     margin: '0 auto',
     fontSize: '1rem',
+    '& h1': {
+      lineHeight: '2.3rem',
+    },
+    '& h2': {
+      lineHeight: '1.8rem',
+    },
   },
 });
 

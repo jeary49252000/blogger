@@ -13,6 +13,7 @@ const useStyles = createUseStyles({
     },
     '& .title': {
       fontSize: '2rem',
+      lineHeight: '2.3rem',
       fontWeight: 'bold',
       marginBottom: '1rem',
     },

@@ -1,6 +1,11 @@
 import * as React from "react"
 import { Nav } from "./navbar";
 import { createUseStyles } from "react-jss";
+import {
+      FluentProvider,
+      webLightTheme,
+} from "@fluentui/react-components";
+import "prismjs/themes/prism-funky.css";
 
 const useStyles = createUseStyles({
   '@global': {
@@ -16,16 +21,22 @@ const useStyles = createUseStyles({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      '& .gatsby-highlight': {
+      },
+      '& pre.prism-code': {
+      },
   }
 });
 
 export const Layout = ({ children }) => {
   const classes = useStyles();
   return (
-    <div className={classes.body}>
-      <Nav />
-      {children}
-    </div>
+    <FluentProvider theme={webLightTheme}>
+      <div className={classes.body}>
+        <Nav />
+        {children}
+      </div>
+    </FluentProvider>
   );
 };
 
