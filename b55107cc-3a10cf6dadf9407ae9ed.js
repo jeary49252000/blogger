@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkchun_hao_lai=self.webpackChunkchun_hao_lai||[]).push([[611],{368:function(h,n,c){c.d(n,{BN_:function(){return u}});const u=(0,c(1625).k)("Phone24Filled","24",["M15.75 2C16.99 2 18 3 18 4.25v15.5c0 1.24-1 2.25-2.25 2.25h-7.5C7.01 22 6 21 6 19.75V4.25C6 3.01 7 2 8.25 2h7.5Zm-2.5 16h-2.5a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5Z"])}}]);
+//# sourceMappingURL=b55107cc-3a10cf6dadf9407ae9ed.js.map
