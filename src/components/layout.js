@@ -16,15 +16,26 @@ const useStyles = createUseStyles({
     },
   },
   body: {
-      margin: '0 auto',
-      width: '80%',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
+    margin: '0 auto',
+    width: '80%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    '@media (max-width: 375px)': {
       '& .gatsby-highlight': {
+        width: '350px',
       },
-      '& pre.prism-code': {
+    },
+    '@media (max-width: 549px) and (min-width: 376px)': {
+      '& .gatsby-highlight': {
+        width: '390px',
       },
+    },
+    '@media (max-width: 768px) and (min-width: 550px)': {
+      '& .gatsby-highlight': {
+        width: '550px',
+      },
+    },
   }
 });
 
